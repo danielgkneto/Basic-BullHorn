@@ -5,6 +5,7 @@
     <title>BullHorn</title>
 </head>
 <body>
+<h2>New message</h2>
 <form action="#" th:action="@{/process}" th:object="${message}" method="post">
     <input type="hidden" th:field="*{id}" />
     <input type="hidden" th:field="*{postedDate}" />

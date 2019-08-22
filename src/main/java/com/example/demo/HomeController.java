@@ -43,20 +43,6 @@ public class HomeController {
         return "show";
     }
 
-    /*
-    @RequestMapping("/update/{id}")
-    public String updateToDo(@PathVariable("id") long id, Model model){
-        model.addAttribute("toDo", messageRepository.findById(id).get());
-        return "todoform";
-    }
-
-    @RequestMapping("/delete/{id}")
-    public String delToDo(@PathVariable("id") long id){
-        messageRepository.deleteById(id);
-        return "redirect:/";
-    }
-
-    */
     @RequestMapping("/about")
     public String about(){
         return "about";
